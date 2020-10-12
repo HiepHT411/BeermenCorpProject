@@ -156,7 +156,7 @@ class AddComponent extends Component {
                                 <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
                                 <br></br>
                                 <br></br>
-                                <a href="/brands" >Back to product list</a> 
+                                
                            </form>
                         </div>
 
