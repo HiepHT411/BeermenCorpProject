@@ -65,6 +65,13 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+.sticky-logo{
+  
+  position: sticky;
+  max-width: 15%;
+  max-height: 10%;
+  
+}
 
 .text-center{
   color:white;
@@ -106,6 +113,29 @@
   width: 25%;
 }
 
+.row-table-schedule{
+  text-overflow: clip;
+  width: 90%;
+  height: 90%;
+}
+
+.dayElement{
+  color: brown;
+  width: 15%;
+}
+.morningElement{
+  color: brown;
+  width: 35%;
+}
+.afternoonElement{
+  color: brown;
+  width: 35%;
+}
+.changeElement{
+  color: brown;
+  width: 15%;
+}
+
 .content{
   color: azure;
 }
@@ -114,7 +144,15 @@
   color: #d5d5d5;
 }
 
-
+.row-table-schedule{
+  position: center;
+  text-overflow: clip;
+  width: 90%;
+  height: 90%;
+}
+.title-schedule th{
+  width: 10%;
+}
 
 
 

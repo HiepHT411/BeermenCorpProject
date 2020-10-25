@@ -9,7 +9,8 @@ import AddComponent from './Components/AddComponent';
 
 import ShowmoreComponent from './Components/ShowmoreComponent';
 
-
+import ScheduleComponent from './Components/ScheduleComponent';
+import UpdateScheduleComponent from './Components/UpdateScheduleComponent';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
               <Route path = "/add-brand/:id" component = {AddComponent}/>
              {/* <Route path = "/update-brand/:id" component = {UpdateComponent}/> */}
               <Route path = "/showmoreinfo-brand/:id" component = {ShowmoreComponent}/>
+              <Route path = "/staffSchedule"component={ScheduleComponent}/>
+              <Route path = "/editSchedule/:id" component={UpdateScheduleComponent}  />            
+              
             </Switch>
           </div>
           <FooterComponent></FooterComponent>

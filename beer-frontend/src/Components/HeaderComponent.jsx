@@ -31,7 +31,7 @@ class HeaderComponent extends Component {
                                 <NavBar.NavDropdown.Item href="http://localhost:3000/add-brand/_add">Phan Quang Tuấn</NavBar.NavDropdown.Item> 
                                 <NavBar.NavDropdown.Item >Đinh Giang Long</NavBar.NavDropdown.Item>                           
                             </NavBar.NavDropdown>
-                            <NavBar.Nav.Link href="#" className = "disable">Staff schedule</NavBar.Nav.Link>
+                            <NavBar.Nav.Link href="http://localhost:3000/staffSchedule">Staff schedule</NavBar.Nav.Link>
                             </NavBar.Nav>
                             <NavBar.Form inline className="searchingForm">
                                 <NavBar.FormControl type="text" placeholder="Search" className="mr-sm-2" />

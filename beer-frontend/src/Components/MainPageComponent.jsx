@@ -47,7 +47,9 @@ class MainPageComponent extends Component {
         return (
         <div >
             <div className = "container ">
-
+                <img class = "sticky-logo" src = "./images/logo.png">
+                
+                </img>
                 <h2 className = "text-center">Product list</h2>
                 <div className = "button-add">
                     <button className="btn btn-primary" onClick = {()=> this.addBrand()}>New product</button>
