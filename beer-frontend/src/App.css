@@ -47,9 +47,13 @@
   border: 1px solid #e9d200;
 }
 .searchingForm .button-search:hover{
-  background-color: rgb(175, 162, 41);
+  color: rgb(160, 151, 66);
   border: 1px solid #e9d200;
   opacity: 0.75;
+}
+.searchingForm .search_text{
+  
+  
 }
 
 .container{
@@ -154,7 +158,9 @@
   width: 10%;
 }
 
-
+.schedule-font{
+  color: #000000;
+}
 
 
 

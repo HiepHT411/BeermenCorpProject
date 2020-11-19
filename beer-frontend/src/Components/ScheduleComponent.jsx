@@ -38,7 +38,7 @@ class ScheduleComponent extends Component {
                                     <th class="changeElement">Change</th>
                                 </tr>
                             </thead>
-                            <tbody className="content">
+                            <tbody className="content schedule-font">
                                 
                                 {
                                    
@@ -49,7 +49,7 @@ class ScheduleComponent extends Component {
                                                 <td>{daySchedule.morningShift}</td>
                                                 <td>{daySchedule.afternoonShift}</td>
                                                 <td>
-                                                    <button onClick = {()=> this.editSchedule(daySchedule.id)} className = "btn btn-info">Reschedule</button>
+                                                    <button onClick = {()=> this.editSchedule(daySchedule.id)} className = "btn btn-info">Reassign</button>
                                                 </td>
                                             </tr>
                                     )
