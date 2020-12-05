@@ -39,7 +39,19 @@
 
 .color-nav{
   background-color: rgb(146, 43, 43);
+  
+  
 }
+.navbar-brand {
+  color: rgb(255, 230, 0);
+}
+.navbar-brand:hover{
+  color: rgb(212, 184, 24);
+}
+.navbar-nav .nav-link {
+  color: rgba(255, 230, 0, 0.9);
+}
+
 
 .searchingForm .button-search{
   background-color: rgb(240, 224, 11);

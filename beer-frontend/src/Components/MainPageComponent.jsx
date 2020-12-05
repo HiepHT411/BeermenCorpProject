@@ -47,9 +47,7 @@ class MainPageComponent extends Component {
         return (
         <div >
             <div className = "container ">
-                <img class = "sticky-logo" src = "./images/logo.png">
                 
-                </img>
                 <h2 className = "text-center">Product list</h2>
                 <div className = "button-add">
                     <button className="btn btn-primary" onClick = {()=> this.addBrand()}>New product</button>
@@ -93,10 +91,10 @@ class MainPageComponent extends Component {
             </div>
 
             <div class="side-bar ">
-                    <a onClick={()=> this.props.history.push('/brands')}><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href = "#" onClick={()=> this.props.history.push('/brands')}><i class="fa fa-fw fa-home"></i>Home</a>
 
                     <div class="social-links">
-                        <a ><i class="fa fa-fw fa-wrench"></i> Services</a>
+                        <a href="#"><i class="fa fa-fw fa-wrench"></i> Services</a>
                         <a href="#"><i class="fa fa-fw fa-user"></i> Clients</a>
                         <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
                        
