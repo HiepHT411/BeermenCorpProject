@@ -63,10 +63,10 @@
   border: 1px solid #e9d200;
   opacity: 0.75;
 }
-.searchingForm .search_text{
+/* .searchingForm .search_text{
   
   
-}
+} */
 
 .container{
   background-image: url(./images/background.png);
@@ -81,12 +81,18 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-.sticky-logo{
+.mainpage-background{
+  background-image: url(./images/background.png);
+  position:sticky;
+  min-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   
-  position: sticky;
-  max-width: 15%;
-  max-height: 10%;
-  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .text-center{
@@ -233,6 +239,7 @@
 }
 footer p{
   font-size: 10px;
+  text-align: center;
 }
 hr.light{
   border-top: 1px solid #d5d5d5;
@@ -247,3 +254,337 @@ hr.endpage{
   margin-top: .8rem;
   margin-top: 1rem;
 }
+
+
+/* ========================================Welcome page==========================================*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{  /*giong define trong C++, khong phai thay doi toan bo css de sua font */
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #fce302;
+    --body-font-color: #515151;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    padding: 3.9rem 0;
+
+}
+
+/* Animations */
+@keyframes fadeUp{
+  0%{
+      transform: translateY(3rem);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes scale{
+  0%{
+      transform: scale(1.1);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+@keyframes grow{
+  0%{
+      width: 0;
+  }
+  100%{
+      opacity: 1;
+      width: 100%;
+  }
+}
+@keyframes fadeDown{
+  0%{
+      transform: translateY(-1rem);
+  }
+  100%{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes spin{
+  0%{
+      transform: rotate(0);
+  }
+  100%{
+      opacity: 1;
+      transform: rotate(-360deg);
+  }
+}
+@keyframes up{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: translateY(-1rem);
+  }
+}
+/* hero section  */
+.hero img{
+    width: 100%;
+    max-width: 100%;/*make sure that even if the image is too big for the section, it not gonna over flow its pattern */
+}
+
+.container2{
+  width: 100%;
+  max-width: 122.5rem;/*it only gonna be 1225 pixel*/
+  margin: 0 auto; /*0 for top and botton and auto for left and right*/
+  padding: 0 2.4rem;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: url("images/hero.jpg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-headline{
+  font-size: 8.5rem;
+  font-family: var(--secondary-font);
+  color: var(--secondary-font-color);
+  font-weight: 100;
+  line-height: -4;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeUp 2s infinite;
+  animation-delay: .75s;
+}
+.first-letter{
+  text-transform: uppercase;
+  font-size: 8rem;
+}
+
+.headline{
+  color: #fff;
+  font-size: 3rem;
+  font-family: var(--main-font);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .5rem;
+  margin-right: -.5rem;
+  animation: scale 2s forwards;
+}
+
+.hero .separator{
+  display: flex;
+  align-items: center;/*the0 chieu doc Y*/
+  justify-content: center;/*theo chieu ngang X*/
+}
+
+.line{
+  width: 100%;
+  max-width: 8.4rem;
+  height:  .25rem;
+  background-color: #fff;
+  position: relative;
+
+  opacity: 0;
+  animation: grow 2s infinite;
+  animation-delay: .75s;
+}
+.line-right::before .line-left::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: .6rem solid transparent;
+
+  opacity: 0;
+  animation: grow 2s infinite;
+  animation-delay: 0.75s;
+}
+.line-right::before{
+  border-right-color: #fff;
+  right: 0;
+}
+.line-left::before{
+  border-left-color: #fff;
+  left: 0;
+}
+
+.asterisk{
+  font-size: 2rem;
+  color: var(--secondary-font-color);
+  margin: 0 1.6rem;
+
+  opacity: 0;
+  animation: spin 3s infinite;
+  animation-delay: .5s;
+}
+
+.single-animation{
+  opacity: 0;
+  animation: fadeDown 2s forwards;
+  animation-delay: 1.5s;
+}
+
+.headline-description h5{
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  letter-spacing: 3px;
+  margin-right: -3px;
+}
+
+.hero .btn{
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+.hero .cta-btn{
+  font-size: 1.1rem;
+  background-color: #fff;
+  padding: .9rem 1.8rem;/*doc ngang*/
+  color: var(--body-font-color);
+  border-radius: .4rem;
+  transition: background-color .5s;
+}
+
+.cta-btn:hover
+.cta-btn:focus{
+  color: #fff;
+  background-color: var(--secondary-font-color);
+}
+
+/* "Discover our story" section  */
+.brand-info{
+  text-align: center;
+  display: flex;
+}
+.brand-info img{
+  width: 60%;
+  
+}
+
+.brand-description h1{
+  margin-top: 15px;
+  color: #fff;
+}
+
+.global-headline{
+  text-align: center;
+}
+
+.global-headline{
+  margin-top: 4rem;
+}
+
+.global-headline .sub-headline{
+  letter-spacing: 2px;
+  line-height: 4.5rem;
+}
+.global-headline .asterisk{
+  color: var(--secondary-font-color);
+  margin: 2.4rem 0;
+}
+
+p{
+  line-height: 1.7rem;
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.brand-description .body-btn{
+  font-size: 1.5rem;
+  color: var(--secondary-font-color);
+  position: relative;
+  transition: color .5s;
+}
+.body-btn::before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-font-color);
+  transition: background-color .5s;
+}
+.body-btn:hover,
+.body-btn:focus{
+  color: var(--secondary-font-color);
+}
+
+.body-btn:hover::before,
+.body-btn:focus::before{
+  background-color: var(--main-font-color-dark);
+}
+
+/* all kind of beer  */
+.all-kind-of-beer{
+  background: url(images/three-beers.jpg) center no-repeat;
+  background-size: cover;
+}
+.between{
+  min-height: 77vh;
+  display: flex;  /*put the text right in the middle*/
+  align-items: center;
+}
+
+/* discover our menu  */
+.brands-demo-menu{
+  display: flex;
+  text-align: center;
+}
+.discover-our-brands p{
+  color: #fff;
+  font-size: large;
+  text-align: center;
+}
+.animate-bottom h1{
+  margin-top: 21px;
+  font-size: 25px;
+}
+.images-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+.images-group img{
+  max-width: 85%;
+}
+/* high qulity badge  */
+.high-quality-badge{
+  background: url(images/high-quality.jpg) center no-repeat;
+  background-size: cover;
+}
+/* sample product section  */
+.product-description{
+  text-align: center;
+}
+.sample-product-demo{
+  display: flex;
+}
+
+
+

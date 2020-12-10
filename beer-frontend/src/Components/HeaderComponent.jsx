@@ -50,8 +50,8 @@ class HeaderComponent extends Component {
             //         <NavBar.Navbar.Brand className="teamname" href="http://localhost:3000">Beermen Corporation</NavBar.Navbar.Brand>
             //         <NavBar.Navbar.Toggle aria-controls="basic-navbar-nav" />
             //             <NavBar.Navbar.Collapse id="basic-navbar-nav">
-            //                 <NavBar.Nav className="mr-auto">
-            //                 <NavBar.Nav.Link class= "" href="http://localhost:3000">Home</NavBar.Nav.Link>
+            //                 <NavBar.Nav className="mr-auto" style={{color: '#fff'}}>
+            //                 <NavBar.Nav.Link class= "" href="http://localhost:3000/brands">Home</NavBar.Nav.Link>
             //                 <NavBar.Nav.Link href="https://github.com/HiepHT411/BeermenCorpProject.git">Github Link</NavBar.Nav.Link>
             //                 <NavBar.NavDropdown title="About Us" id="basic-nav-dropdown">
             //                     <NavBar.NavDropdown.Item href="#">Giảng viên hướng dẫn</NavBar.NavDropdown.Item>
@@ -75,7 +75,7 @@ class HeaderComponent extends Component {
                             
             //             </NavBar.Navbar.Collapse>
             //     </NavBar.Navbar>
-            // </div>
+            //</div>
             <div>
                 <nav class="color-nav navbar navbar-expand-sm ">
                     <a href="http://localhost:3000" class="teamname navbar-brand">Beermen Corporation</a>
@@ -84,7 +84,7 @@ class HeaderComponent extends Component {
                     </button> */}
                     <div class="navbar-collapse collapse" id="basic-navbar-nav">
                         <div class="mr-auto navbar-nav">
-                            <a class="nav-link" href="http://localhost:3000" data-rb-event-key="http://localhost:3000">Home</a>
+                            <a class="nav-link" href="http://localhost:3000/brands" data-rb-event-key="http://localhost:3000">Home</a>
                             <a href="https://github.com/HiepHT411/BeermenCorpProject.git" data-rb-event-key="https://github.com/HiepHT411/BeermenCorpProject.git" class="nav-link">Github Link</a>
                             
                             <div class="dropdown nav-item">

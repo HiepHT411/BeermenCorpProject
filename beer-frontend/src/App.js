@@ -11,15 +11,16 @@ import ShowmoreComponent from './Components/ShowmoreComponent';
 
 import ScheduleComponent from './Components/ScheduleComponent';
 import UpdateScheduleComponent from './Components/UpdateScheduleComponent';
-
+import WelcomePageComponent from './Components/WelcomePageComponent';
 function App() {
   return (
     <div>
+      
       <Router>
           <HeaderComponent/>
           <div className = "container">
             <Switch>
-              <Route path = "/" exact component = {MainPageComponent}/>
+              <Route path = "/" exact component = {WelcomePageComponent}/>
               <Route path = "/brands" component = {MainPageComponent}/>
               <Route path = "/add-brand/:id" component = {AddComponent}/>
              {/* <Route path = "/update-brand/:id" component = {UpdateComponent}/> */}

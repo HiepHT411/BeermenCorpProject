@@ -1,6 +1,7 @@
 package com.beermen.webapp.controller;
 
-import java.util.HashMap;
+import java.util.HashMap
+;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -24,7 +25,7 @@ import com.beermen.webapp.repo.BeermenRepo;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping(path="/api/v1")
+@RequestMapping(path="/api/v1")	//takes care of handling responses correctly, important for sb for find this class
 public class BrandController {
 	
 	@Autowired

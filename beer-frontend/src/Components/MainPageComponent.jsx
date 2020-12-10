@@ -46,7 +46,7 @@ class MainPageComponent extends Component {
     render() {
         return (
         <div >
-            <div className = "container ">
+            <div className = "container">
                 
                 <h2 className = "text-center">Product list</h2>
                 <div className = "button-add">
