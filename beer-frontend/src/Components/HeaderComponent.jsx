@@ -88,19 +88,19 @@ class HeaderComponent extends Component {
                             <a href="https://github.com/HiepHT411/BeermenCorpProject.git" data-rb-event-key="https://github.com/HiepHT411/BeermenCorpProject.git" class="nav-link">Github Link</a>
                             
                             <div class="dropdown nav-item">
-                                <a data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false" id="basic-nav-dropdown" href="#" class="dropdown-toggle nav-link" role="button">About Us</a>
-                                <div className="dropdown-menu" aria-labelledby="basic-nav-dropdown">
-                                    <a className="dropdown-item" href="">Giảng viên hướng dẫn</a>
-                                    <div className= "dropdown-divider"></div>
-                                    <a className="dropdown-item" href="">Hoàng Tuấn Hiệp</a>
-                                    <a className="dropdown-item" href="">Nguyễn Hải Long</a>
-                                    <a className="dropdown-item" href="">Trịnh Hoàng Tân</a>
-                                    <a className="dropdown-item" href="">Phan Quang Tuấn</a>
-                                    <a className="dropdown-item" href="">Đinh Giang Long</a>
-                                </div>
+                                <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="basic-nav-dropdown" href="#" class="dropdown-toggle nav-link" role="button">About Us</a>
+                                <ul className="dropdown-menu" >
+                                    <a><li className="dropdown-item" href="">Giảng viên hướng dẫn</li></a>
+                                    <a><div className= "dropdown-divider"></div></a>
+                                    <a><li className="dropdown-item" href="">Hoàng Tuấn Hiệp</li></a>
+                                    <li className="dropdown-item" href="">Nguyễn Hải Long</li>
+                                    <li className="dropdown-item" href="">Trịnh Hoàng Tân</li>
+                                    <li className="dropdown-item" href="">Phan Quang Tuấn</li>
+                                    <li className="dropdown-item" href="">Đinh Giang Long</li>
+                                </ul>
                             </div>
                             <a href="http://localhost:3000/staffSchedule" data-rb-event-key="http://localhost:3000/staffSchedule" class="nav-link">Staff schedule</a>
-                            </div>
+                        </div>
                             <form class="searchingForm form-inline">
                                 <input placeholder="Search.." type="text" name="search_text" value={this.state.search_text} onChange={this.setSearchContent} class="mr-sm-2 search_text form-control"/>
                                     <button type="button" onClick={this.searchModuleHandler} class="btn button-search">Search</button>

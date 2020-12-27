@@ -79,7 +79,12 @@ class AddComponent extends Component {
 
     saveOrUpdateProduct = (e) =>{
         e.preventDefault();
-
+        var strError = 'ERROR: Invalid value';
+        if(parseInt(this.state.quantity) <0 ) this.state.quantity = 'ERROR: Invalid value';
+        if(parseFloat(this.state.price) <0) this.state.price = strError;
+        if(parseFloat(this.state.abv) <0)this.state.abv = strError;
+        if(parseInt(this.state.packaging) <0) this.state.packaging = strError;
+        if(parseInt(this.state.volume) <0) this.state.volume = strError;
         let brand = {name: this.state.name, quantity: this.state.quantity, price: this.state.price, date: this.state.date
                     , abv: this.state.abv, packaging: this.state.packaging, volume: this.state.volume};
         

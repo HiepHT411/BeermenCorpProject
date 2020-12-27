@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class WelcomePageComponent extends Component {
     constructor(props){
         super(props)
@@ -24,7 +23,7 @@ class WelcomePageComponent extends Component {
                             <div class="line line-right"></div>
                         </div>
                         <div class="single-animation">
-                            <h5>Ready to be opened</h5>
+                            <h5>Have a beer no fear</h5>
                             <a href="#" class="btn cta-btn">Explore</a>
                         </div>
                     </div>
@@ -132,6 +131,7 @@ class WelcomePageComponent extends Component {
                                     <div class="animate-bottom">
                                         <h1 class="headline headline-dark">for new experiences</h1>
                                     </div>
+                                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
                                 </div>
                                 <p>
     Bạn là một công ty đầu tư muốn thử sức với lĩnh vực xuất nhập khẩu ? <br/>
@@ -142,16 +142,16 @@ class WelcomePageComponent extends Component {
                                 <a href="#" class="btn btn-warning">Order now</a>
                             </div>
                             <div class="images-group">
-                    <img class = "animate-top" src="images/sample-group-1.jpg" alt=""/>
+                    <img class = "animate-top" src="images/sample-group-4.jpg" alt=""/>
                     <img class = "animate-top" src="images/sample-group-3.jpg" alt=""/>
-                    {/* <img class = "animate-bottom" src="images/sample-group-4.jpg" alt=""/>
-                    <img class = "animate-bottom" src="images/sample-group-5.jpg" alt=""/> */}
+                    <img class = "animate-bottom" src="images/sample-group-1.jpg" alt=""/>
+                    <img class = "animate-bottom" src="images/sample-group-5.jpg" alt=""/>
 
                             </div>
                         </div>
                     </div>
                 </section >
-
+            
             </div>
 
             

@@ -44,9 +44,7 @@ class FooterComponent extends Component {
                         </div>
                         <div class = "col-12">
                             <hr class = "endpage"/>
-                                <h6>&copy;beermencorp<br></br>All right reserved 2020</h6>
                         </div>
-
                     </div>
                 </footer>
             </div>

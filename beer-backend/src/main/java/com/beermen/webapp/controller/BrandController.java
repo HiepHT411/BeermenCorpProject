@@ -1,7 +1,6 @@
 package com.beermen.webapp.controller;
 
-import java.util.HashMap
-;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -27,9 +26,16 @@ import com.beermen.webapp.repo.BeermenRepo;
 @RestController
 @RequestMapping(path="/api/v1")	//takes care of handling responses correctly, important for sb for find this class
 public class BrandController {
+	//if it isn't declared final, the class could modify the injected property after it was instantiated.
+	private final BeermenRepo beermenRepo;
 	
-	@Autowired
-	private BeermenRepo beermenRepo;
+	//Constructor injection: don't have to provide the autowire annotation
+	public BrandController(BeermenRepo beermenRepo) {
+		this.beermenRepo = beermenRepo;
+	}
+	//can them 1 layer service se hay hon (co Interface va Interface Implement
+	// type of our service  is a concrete type and DI of a hard type isn't considered as a best practise
+	//dung lombok voi annotation @RequiredAgrsConstructor thì k cần viết constructor này nữa
 	
 	//get all product
 	@GetMapping(path="/brands")
