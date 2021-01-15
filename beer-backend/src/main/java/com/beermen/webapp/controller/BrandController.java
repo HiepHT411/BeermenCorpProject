@@ -24,7 +24,7 @@ import com.beermen.webapp.repo.BeermenRepo;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping(path="/api/v1")	//takes care of handling responses correctly, important for sb for find this class
+@RequestMapping(path="/beermen/api/v1.1")	//takes care of handling responses correctly, important for sb for find this class
 public class BrandController {
 	//if it isn't declared final, the class could modify the injected property after it was instantiated.
 	private final BeermenRepo beermenRepo;

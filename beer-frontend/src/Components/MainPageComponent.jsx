@@ -23,7 +23,7 @@ class MainPageComponent extends Component {
     }
 
     addBrand(){
-        this.props.history.push('/add-brand/_add');
+        this.props.history.push('/add-brand/add-new-brand');
     }
 
     editBrand(id){
@@ -48,9 +48,9 @@ class MainPageComponent extends Component {
         <div >
             <div className = "container">
                 
-                <h2 className = "text-center">Product list</h2>
+                <h2 className = "text-center">Brand list</h2>
                 <div className = "button-add">
-                    <button className="btn btn-primary" onClick = {()=> this.addBrand()}>New product</button>
+                    <button className="btn btn-primary" onClick = {()=> this.addBrand()}>Add new brand</button>
                 </div>
 
                 <div className = "row-table">

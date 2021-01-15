@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import BeerService from '../Services/BeerService';
-
 class AddComponent extends Component {
     constructor(props){
         super(props)
@@ -90,7 +89,7 @@ class AddComponent extends Component {
         
         console.log('brand => ' + JSON.stringify(brand) );
 
-        if(this.state.id == '_add'){
+        if(this.state.id == 'add-new-brand'){
             BeerService.createBrand(brand).then((res)=>{
                 this.props.history.push('/brands');
             });

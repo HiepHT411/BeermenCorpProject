@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const SCHEDULE_API_BASE_URL = "http://localhost:8080/api/v1/schedule";
+const SCHEDULE_API_BASE_URL = "http://localhost:8080/beermen/api/v1.1/schedule";
 
 class ScheduleService{
     getSchedule(){

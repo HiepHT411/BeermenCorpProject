@@ -18,7 +18,7 @@ import com.beermen.webapp.repo.ScheduleRepo;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping(path = "/api/v1")
+@RequestMapping(path = "beermen/api/v1.1")
 public class ScheduleController {
 	
 	@Autowired
